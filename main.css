@@ -1,0 +1,64 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #ffeb3bab;
+    margin: 0;
+}
+
+/* Style for main container */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    background-color: white;
+    height: calc(100% - 60px);
+    margin: 30px auto;
+    overflow-y: scroll;
+}
+
+.left-container {
+    flex: 1;
+    background-color: #4A90E2;
+    padding: 40px;
+}
+
+.left-container h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.right-container {
+    flex: 2;
+    padding: 40px;
+    position: relative;
+}
+
+.right-container .image-container {
+    background: white;
+    position: absolute;
+    width: 250px;
+    top: 10%;
+    bottom: 10%;
+    left: -20%;
+    background-color: antiquewhite;
+}
+.right-container .info-container {
+    margin-left: 140px;
+}
+
+.info-container button {
+    height: 40px;
+    width: 100px;
+    border-radius: 10%;
+
+    border: 2px solid #eae9e9;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.info-container button.blue {
+    color: white;
+    background-color: #4A90E2;
+}
